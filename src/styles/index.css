@@ -1,0 +1,965 @@
+/* ================= VARIABLES ================= */
+:root {
+  --primary-color: #a90505;
+  --text-color: #4b4b4b;
+  --bg-color: #ffffff;
+  --container-width: 1100px;
+}
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= GLOBAL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 120px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #111;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p,
+a,
+li {
+  overflow-wrap: break-word;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ================= CONTAINERS ================= */
+.container,
+.navbar-container,
+.hero-container,
+.reality-container,
+.services-container,
+.why-container,
+.optional-container,
+.how-container,
+.deliverables-container,
+.cta-container,
+.footer-container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 0 40px;
+}
+
+/* ================= UTILITIES ================= */
+.red {
+  color: var(--primary-color);
+}
+
+.white {
+  color: #fff;
+}
+
+.gray {
+  color: #666;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-subtitle {
+  margin-top: 14px;
+  font-size: 24px;
+  color: #f1f1f1;
+}
+
+.hero-desc {
+  margin-top: 18px;
+  max-width: 620px;
+  color: #bbbbbb;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ================= BUTTONS ================= */
+button,
+a.primary,
+a.secondary {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* PRIMARY */
+button.primary,
+a.primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* SECONDARY */
+button.secondary,
+a.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* HOVER */
+button.primary:hover,
+a.primary:hover {
+  transform: translateY(-3px);
+  opacity: 0.92;
+}
+
+button.secondary:hover,
+a.secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ================= SECTION HEADERS ================= */
+.services-header,
+.why-header,
+.optional-header,
+.how-header,
+.deliverables-header,
+.reality-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-header h2,
+.why-header h2,
+.optional-header h2,
+.how-header h2,
+.deliverables-header h2,
+.reality-header h2,
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.services-header p,
+.why-header p,
+.optional-header p,
+.how-header p,
+.deliverables-header p,
+.reality-header p,
+.cta p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ================= GRID SYSTEM ================= */
+.services-grid,
+.why-grid,
+.optional-grid,
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ================= CARD SYSTEM ================= */
+.service-card,
+.why-card,
+.optional-card,
+.how-step,
+.deliverable-item {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  padding: 30px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-card:hover,
+.why-card:hover,
+.optional-card:hover,
+.how-step:hover,
+.deliverable-item:hover {
+  transform: translateY(-5px);
+  border-color: #dddddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3,
+.why-card h3,
+.optional-card h3,
+.how-step h3,
+.deliverable-item h3 {
+  margin-bottom: 14px;
+}
+
+/* ================= REALITY ================= */
+.reality {
+  background: #ffffff;
+}
+
+.reality-header h2 {
+  font-size: 46px;
+  line-height: 1.15;
+}
+
+.reality-header p {
+  font-size: 20px;
+}
+
+/* GRID */
+.reality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* CARD */
+.reality-card {
+  padding: 40px;
+  border-radius: 14px;
+  height: 100%;
+}
+
+/* LIGHT CARD */
+.reality-card.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* DARK CARD */
+.reality-card.dark {
+  background: #0b0b0b;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* TITLE */
+.reality-card h3 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.reality-card.light h3 {
+  color: #111;
+}
+
+.reality-card.dark h3 {
+  color: #fff;
+}
+
+/* LIST */
+.reality-card ul {
+  padding-left: 22px;
+}
+
+.reality-card li {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.reality-card.light li {
+  color: #444;
+}
+
+.reality-card.dark li {
+  color: #f1f1f1;
+}
+
+/* HIGHLIGHT */
+.reality-highlight {
+  margin-top: 42px;
+  padding: 30px;
+  background: #f4f4f4;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.reality-highlight p {
+  font-size: 21px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ================= SECTION BACKGROUNDS ================= */
+.services,
+.deliverables,
+.optional-services {
+  background: #fafafa;
+}
+
+/* ================= WHY INDOSIGHT ================= */
+.why-card {
+  position: relative;
+}
+
+.why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* ================= HOW ================= */
+.step-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: #0b0b0b;
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta p {
+  margin-top: 18px;
+  color: #bbbbbb;
+}
+
+.cta-buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #101010;
+  color: #fff;
+  padding: 60px 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  max-width: 320px;
+  color: #bbbbbb;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+@media (max-width: 1024px) {
+
+  section {
+    padding: 100px 0;
+  }
+
+  .hero-title {
+    font-size: 50px;
+  }
+
+  .reality-header h2 {
+    font-size: 40px;
+  }
+
+  .reality-header p {
+    font-size: 18px;
+  }
+
+  .reality-card {
+    padding: 32px;
+  }
+
+  .reality-card h3 {
+    font-size: 28px;
+  }
+
+  .services-grid,
+  .why-grid,
+  .optional-grid,
+  .deliverables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 768px) {
+
+  section {
+    padding: 80px 0;
+  }
+
+  .container,
+  .navbar-container,
+  .hero-container,
+  .reality-container,
+  .services-container,
+  .why-container,
+  .optional-container,
+  .how-container,
+  .deliverables-container,
+  .cta-container,
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .navbar-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 90px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons button,
+  .hero-buttons a,
+  .cta-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* REALITY */
+  .reality-header {
+    margin-bottom: 40px;
+  }
+
+  .reality-header h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .reality-header p {
+    font-size: 16px;
+  }
+
+  .reality-grid,
+  .services-grid,
+  .why-grid,
+  .optional-grid,
+  .how-steps,
+  .deliverables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reality-card,
+  .service-card,
+  .why-card,
+  .optional-card,
+  .how-step,
+  .deliverable-item {
+    padding: 24px;
+  }
+
+  .reality-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .reality-card li {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .reality-highlight {
+    margin-top: 28px;
+    padding: 24px;
+  }
+
+  .reality-highlight p {
+    font-size: 17px;
+  }
+
+  .services-header,
+  .why-header,
+  .optional-header,
+  .how-header,
+  .deliverables-header,
+  .reality-header {
+    margin-bottom: 48px;
+  }
+
+  .services-header h2,
+  .why-header h2,
+  .optional-header h2,
+  .how-header h2,
+  .deliverables-header h2,
+  .cta h2 {
+    font-size: 30px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .reality-header h2,
+  .services-header h2,
+  .why-header h2,
+  .optional-header h2,
+  .how-header h2,
+  .deliverables-header h2,
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .reality-card h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button,
+  a.primary,
+  a.secondary {
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    gap: 12px;
+  }
+}
+
+/* =========================================================
+   UX / POLISH IMPROVEMENTS
+========================================================= */
+
+/* ================= SMOOTH SCROLL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= CONSISTENT SPACING ================= */
+section {
+  padding: 120px 0;
+}
+
+.services-header,
+.why-header,
+.optional-header,
+.how-header,
+.deliverables-header,
+.reality-header {
+  margin-bottom: 64px;
+}
+
+.service-card,
+.why-card,
+.optional-card,
+.how-step,
+.deliverable-item,
+.reality-card {
+  padding: 30px;
+}
+
+/* ================= CLEAN TYPOGRAPHY ================= */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.services-header h2,
+.why-header h2,
+.optional-header h2,
+.how-header h2,
+.deliverables-header h2,
+.reality-header h2,
+.cta h2 {
+  font-size: 36px;
+}
+
+.service-card h3,
+.why-card h3,
+.optional-card h3,
+.how-step h3,
+.deliverable-item h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* ================= BUTTON HOVER ================= */
+button,
+a.primary,
+a.secondary {
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    opacity 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+button.primary:hover,
+a.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(169, 5, 5, 0.18);
+}
+
+button.secondary:hover,
+a.secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* ================= CARD HOVER ================= */
+.service-card,
+.why-card,
+.optional-card,
+.how-step,
+.deliverable-item {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-card:hover,
+.why-card:hover,
+.optional-card:hover,
+.how-step:hover,
+.deliverable-item:hover {
+  transform: translateY(-5px);
+  border-color: #dddddd;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+}
+
+/* ================= CLEANER NAVBAR ================= */
+.navbar {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-links a {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ================= REDUCE VISUAL CLUTTER ================= */
+
+/* softer borders */
+.service-card,
+.why-card,
+.optional-card,
+.how-step,
+.deliverable-item {
+  border: 1px solid #eeeeee;
+}
+
+/* cleaner backgrounds */
+.services,
+.deliverables,
+.optional-services {
+  background: #fafafa;
+}
+
+/* more whitespace */
+.hero-desc,
+.services-header p,
+.why-header p,
+.optional-header p,
+.how-header p,
+.deliverables-header p,
+.reality-header p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* better readability */
+.reality-card li,
+.service-card p,
+.why-card p,
+.optional-card p,
+.how-step p,
+.deliverable-item p {
+  line-height: 1.8;
+}
+
+/* ================= FOCUS STATES ================= */
+button:focus,
+a:focus {
+  outline: 2px solid rgba(169, 5, 5, 0.3);
+  outline-offset: 3px;
+}
+
+/* ================= MOBILE POLISH ================= */
+@media (max-width: 768px) {
+
+  section {
+    padding: 80px 0;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .services-header h2,
+  .why-header h2,
+  .optional-header h2,
+  .how-header h2,
+  .deliverables-header h2,
+  .reality-header h2,
+  .cta h2 {
+    font-size: 30px;
+  }
+
+  .service-card,
+  .why-card,
+  .optional-card,
+  .how-step,
+  .deliverable-item,
+  .reality-card {
+    padding: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .services-header h2,
+  .why-header h2,
+  .optional-header h2,
+  .how-header h2,
+  .deliverables-header h2,
+  .reality-header h2,
+  .cta h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
