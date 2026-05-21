@@ -1,13 +1,16 @@
+import logo from "../assets/logo2.png";
+
 function Navbar() {
   return (
     <nav className="navbar">
+
       <div className="navbar-container">
 
         {/* LOGO */}
         <a href="#" className="logo">
 
           <img
-            src="/src/assets/logo2.png"
+            src={logo}
             alt="Indosight Logo"
             className="logo-image"
           />
@@ -21,6 +24,7 @@ function Navbar() {
         </div>
 
       </div>
+
     </nav>
   )
 }
