@@ -15,7 +15,7 @@ function CTA() {
             Request Feasibility Scope
           </a>
 
-          <a href="mailto:boss@indosight.io" className="secondary">
+          <a href="mailto:boss@indosight.co" className="secondary">
             Contact Us
           </a>
         </div>

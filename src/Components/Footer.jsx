@@ -18,7 +18,7 @@ function Footer() {
           <div className="footer-links">
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-            <a href="mailto:boss@indosight.io">boss@indosight.io</a>
+            <a href="mailto:boss@indosight.co">boss@indosight.co</a>
           </div>
 
         </div>

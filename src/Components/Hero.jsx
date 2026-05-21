@@ -29,14 +29,14 @@ function Hero() {
           <div className="hero-buttons">
 
             <a
-              href="mailto:boss@indosight.io?subject=Feasibility%20Inquiry"
+              href="mailto:boss@indosight.co?subject=Feasibility%20Inquiry"
               className="primary"
             >
               Request a Feasibility Scope
             </a>
 
             <a
-              href="mailto:boss@indosight.io?subject=General%20Inquiry"
+              href="mailto:boss@indosight.co?subject=General%20Inquiry"
               className="secondary"
             >
               Contact Us
