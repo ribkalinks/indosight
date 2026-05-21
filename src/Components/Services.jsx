@@ -5,35 +5,42 @@ function Services() {
 
         <div className="services-header">
           <h2>What We Do</h2>
+
           <p>
-            We provide on-the-ground insights to help you validate,
-            enter, and operate in the Indonesian market.
+            We conduct on-the-ground feasibility research for foreign
+            companies and investors evaluating opportunities in Indonesia.
           </p>
         </div>
 
         <div className="services-grid">
 
           <div className="service-card">
-            <h3>Market Feasibility</h3>
+            <h3>Supplier & Market Validation</h3>
+
             <p>
-              We assess whether your business can realistically operate
-              in Indonesia — beyond just market size.
+              We verify whether suppliers, operators, and potential
+              partners are actually available, responsive, and
+              commercially viable.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Regulatory Mapping</h3>
+            <h3>Real Pricing & Operations</h3>
+
             <p>
-              Understand the real regulatory landscape, local barriers,
-              and what it actually takes to comply.
+              We uncover real negotiation conditions, operational
+              constraints, logistical friction, and execution realities
+              beyond public market data.
             </p>
           </div>
 
           <div className="service-card">
-            <h3>Execution Strategy</h3>
+            <h3>Feasibility Assessment</h3>
+
             <p>
-              We help translate strategy into real-world execution
-              tailored to Indonesian conditions.
+              We identify what is realistically required to operate in
+              Indonesia — and whether execution is commercially and
+              operationally practical.
             </p>
           </div>
 

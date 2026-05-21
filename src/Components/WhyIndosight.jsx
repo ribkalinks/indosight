@@ -1,37 +1,54 @@
 function WhyIndosight() {
   return (
     <section className="why" id="why">
-      <div className="container">
+      <div className="why-container">
 
         {/* HEADER */}
         <div className="why-header">
           <h2>Why Indosight</h2>
+
           <p>
-            We are not a typical research firm. We are built for execution in real Indonesian conditions.
+            Built for companies that need real operational clarity
+            before committing capital in Indonesia.
           </p>
         </div>
 
-        {/* GRID 3 KOLOM */}
+        {/* GRID */}
         <div className="why-grid">
 
+          {/* CARD 1 */}
           <div className="why-card">
+            <span className="why-line"></span>
+
             <h3>Built for Foreign Operators</h3>
+
             <p>
-              We understand the challenges of entering Indonesia as an outsider — from cultural gaps to operational friction.
+              Designed for companies without local presence,
+              networks, or operational visibility in Indonesia.
             </p>
           </div>
 
+          {/* CARD 2 */}
           <div className="why-card">
-            <h3>Western Standards + Local Access</h3>
+            <span className="why-line"></span>
+
+            <h3>Western Standards. Local Access.</h3>
+
             <p>
-              We combine structured, professional research standards with direct access to local networks and real market players.
+              Western-led execution combined with direct
+              on-the-ground access across Indonesian markets.
             </p>
           </div>
 
+          {/* CARD 3 */}
           <div className="why-card">
-            <h3>Truth Over Optimism</h3>
+            <span className="why-line"></span>
+
+            <h3>Clarity Over Optimism</h3>
+
             <p>
-              We don’t sell positive narratives. We give you clear, honest insights — even when the answer is “this won’t work.”
+              We are not incentivized to tell you “yes.”
+              We are incentivized to tell you the truth.
             </p>
           </div>
 

@@ -2,33 +2,50 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-container">
-        <div className="hero-text">
+
+        <div className="hero-content">
+
+          <span className="section-label">
+            Indonesian Market Intelligence
+          </span>
 
           <h1 className="hero-title">
-            <span className="red">indo</span>
-            <span className="white">sight</span>
+            Ground-Truth Feasibility
+            <br />
+            in Indonesia
           </h1>
 
-          <h2 className="hero-subtitle">
-            Ground-Truth Feasibility in Indonesia
-          </h2>
-
-          <p className="hero-desc">
+          <p className="hero-subtitle">
             We don’t tell you how big the market is.
             We tell you whether you can actually operate in it.
           </p>
 
-          <div className="hero-buttons">
-            <button className="primary">
-              Request a Feasibility Scope
-            </button>
+          <p className="hero-desc">
+            Indosight provides on-the-ground feasibility validation,
+            local verification, and operational insight for companies
+            entering or expanding in Indonesia.
+          </p>
 
-            <button className="secondary">
+          <div className="hero-buttons">
+
+            <a
+              href="mailto:boss@indosight.io?subject=Feasibility%20Inquiry"
+              className="primary"
+            >
+              Request a Feasibility Scope
+            </a>
+
+            <a
+              href="mailto:boss@indosight.io?subject=General%20Inquiry"
+              className="secondary"
+            >
               Contact Us
-            </button>
+            </a>
+
           </div>
 
         </div>
+
       </div>
     </section>
   )

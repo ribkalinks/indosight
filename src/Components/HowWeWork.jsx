@@ -1,45 +1,102 @@
 function HowWeWork() {
   return (
-    <section className="how" id="how-we-work">
-      <div className="container">
+    <section className="how" id="how">
+      <div className="how-container">
 
+        {/* HEADER */}
         <div className="how-header">
+
+          <span className="section-label">
+            Process
+          </span>
+
           <h2>How We Work</h2>
+
           <p>
-            We don’t rely on assumptions — we validate reality through direct field research and real human interaction.
+            We operate where most firms don’t — on the ground.
+            Our research is built through direct outreach, local communication,
+            and real-world verification across Indonesia.
           </p>
+
         </div>
 
+        {/* STEPS */}
         <div className="how-steps">
 
+          {/* STEP 1 */}
           <div className="how-step">
-            <span className="step-number">01</span>
+
+            <span className="step-number">
+              01
+            </span>
+
             <h3>Direct Outreach</h3>
-            <p>We engage directly with local communities and market participants.</p>
+
+            <p>
+              We engage directly with suppliers, operators,
+              stakeholders, and local market participants.
+            </p>
+
           </div>
 
+          {/* STEP 2 */}
           <div className="how-step">
-            <span className="step-number">02</span>
+
+            <span className="step-number">
+              02
+            </span>
+
             <h3>Local Language Interviews</h3>
-            <p>We conduct interviews in local languages for authentic insights.</p>
+
+            <p>
+              Conversations are conducted in Bahasa Indonesia
+              and English to ensure accurate and practical insights.
+            </p>
+
           </div>
 
+          {/* STEP 3 */}
           <div className="how-step">
-            <span className="step-number">03</span>
+
+            <span className="step-number">
+              03
+            </span>
+
             <h3>Field Verification</h3>
-            <p>We validate everything directly on-site.</p>
+
+            <p>
+              Where required, we verify operational conditions,
+              suppliers, and execution realities directly on-site.
+            </p>
+
           </div>
 
+          {/* STEP 4 */}
           <div className="how-step">
-            <span className="step-number">04</span>
+
+            <span className="step-number">
+              04
+            </span>
+
             <h3>Requirement-Based Research</h3>
-            <p>Research tailored to your real business needs.</p>
+
+            <p>
+              Every engagement is driven by your specific business
+              requirements, operational questions, and execution goals.
+            </p>
+
           </div>
 
         </div>
 
+        {/* BOTTOM MESSAGE */}
         <div className="how-highlight">
-          <p>Not just data — <strong>we deliver real answers.</strong></p>
+
+          <p>
+            You define what you need to know.
+            We go out and get the answers.
+          </p>
+
         </div>
 
       </div>
