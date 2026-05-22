@@ -1,21 +1,21 @@
 function HowWeWork() {
   return (
     <section className="how" id="how">
+
       <div className="how-container">
 
         {/* HEADER */}
         <div className="how-header">
 
-          <span className="section-label">
-            Process
-          </span>
-
-          <h2>How We Work</h2>
+          <h2>
+            How We Work
+          </h2>
 
           <p>
             We operate where most firms don’t — on the ground.
-            Our research is built through direct outreach, local communication,
-            and real-world verification across Indonesia.
+            Our research is built through direct outreach,
+            local communication, and real-world verification
+            across Indonesia.
           </p>
 
         </div>
@@ -30,11 +30,14 @@ function HowWeWork() {
               01
             </span>
 
-            <h3>Direct Outreach</h3>
+            <h3>
+              Direct Outreach
+            </h3>
 
             <p>
-              We engage directly with suppliers, operators,
-              stakeholders, and local market participants.
+              We engage directly with suppliers,
+              operators, stakeholders, and local
+              market participants.
             </p>
 
           </div>
@@ -46,11 +49,14 @@ function HowWeWork() {
               02
             </span>
 
-            <h3>Local Language Interviews</h3>
+            <h3>
+              Local Language Interviews
+            </h3>
 
             <p>
-              Conversations are conducted in Bahasa Indonesia
-              and English to ensure accurate and practical insights.
+              Conversations are conducted in
+              Bahasa Indonesia and English to
+              ensure accurate and practical insights.
             </p>
 
           </div>
@@ -62,11 +68,14 @@ function HowWeWork() {
               03
             </span>
 
-            <h3>Field Verification</h3>
+            <h3>
+              Field Verification
+            </h3>
 
             <p>
-              Where required, we verify operational conditions,
-              suppliers, and execution realities directly on-site.
+              Where required, we verify operational
+              conditions, suppliers, and execution
+              realities directly on-site.
             </p>
 
           </div>
@@ -78,11 +87,14 @@ function HowWeWork() {
               04
             </span>
 
-            <h3>Requirement-Based Research</h3>
+            <h3>
+              Requirement-Based Research
+            </h3>
 
             <p>
-              Every engagement is driven by your specific business
-              requirements, operational questions, and execution goals.
+              Every engagement is driven by your
+              specific business requirements,
+              operational questions, and execution goals.
             </p>
 
           </div>
@@ -93,13 +105,14 @@ function HowWeWork() {
         <div className="how-highlight">
 
           <p>
-            You define what you need to know.
-            We go out and get the answers.
+            We deliver real answers —
+            not assumptions or recycled reports.
           </p>
 
         </div>
 
       </div>
+
     </section>
   )
 }

@@ -1,20 +1,20 @@
 function OptionalServices() {
   return (
     <section className="optional-services" id="support">
+
       <div className="optional-container">
 
         {/* HEADER */}
         <div className="optional-header">
 
-          <span className="section-label">
-            Optional Extension
-          </span>
-
-          <h2>Extended Support</h2>
+          <h2>
+            Extended Support
+          </h2>
 
           <p>
             Where required, we can continue beyond feasibility research
-            into practical operational support on the ground in Indonesia.
+            into practical operational support and local coordination
+            within Indonesia.
           </p>
 
         </div>
@@ -32,8 +32,8 @@ function OptionalServices() {
             </h3>
 
             <p>
-              Identification and outreach support for potential suppliers,
-              operators, distributors, and local business partners.
+              Identification and outreach support for suppliers,
+              operators, distributors, and potential local partners.
             </p>
 
           </div>
@@ -48,8 +48,8 @@ function OptionalServices() {
             </h3>
 
             <p>
-              Assistance during early operational setup, execution
-              planning, and local coordination processes.
+              Assistance during early operational setup,
+              execution planning, and local coordination processes.
             </p>
 
           </div>
@@ -73,6 +73,7 @@ function OptionalServices() {
         </div>
 
       </div>
+
     </section>
   )
 }

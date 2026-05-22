@@ -1,4 +1,4 @@
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo2.png"
 
 function Navbar() {
   return (
@@ -19,8 +19,13 @@ function Navbar() {
 
         {/* NAVIGATION */}
         <div className="nav-links">
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+
+          {/* REMOVE SERVICES */}
+
+          <a href="#contact">
+            Contact
+          </a>
+
         </div>
 
       </div>

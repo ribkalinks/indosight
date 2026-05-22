@@ -6,9 +6,7 @@ function Deliverables() {
         {/* HEADER */}
         <div className="deliverables-header">
 
-          <span className="section-label">
-            Deliverables
-          </span>
+          {/* REMOVE SECTION LABEL */}
 
           <h2>What You Receive</h2>
 
