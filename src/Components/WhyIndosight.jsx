@@ -24,12 +24,10 @@ function WhyIndosight() {
           {/* CARD 1 */}
           <div className="why-card">
 
-            <span className="why-line"></span>
+            <div className="why-line"></div>
 
             <h3>
-              Built for
-              <br />
-              Foreign Operators
+              Built for Foreign Operators
             </h3>
 
             <p>
@@ -42,11 +40,11 @@ function WhyIndosight() {
           {/* CARD 2 */}
           <div className="why-card">
 
-            <span className="why-line"></span>
+            <div className="why-line"></div>
 
             <h3>
-              Western Standards
-              <br />
+              Western Standards 
+            <br/>
               Local Access
             </h3>
 
@@ -60,12 +58,10 @@ function WhyIndosight() {
           {/* CARD 3 */}
           <div className="why-card">
 
-            <span className="why-line"></span>
+            <div className="why-line"></div>
 
             <h3>
-              Clarity
-              <br />
-              Over Optimism
+              Clarity Over Optimism
             </h3>
 
             <p>

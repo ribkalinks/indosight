@@ -1,14 +1,15 @@
 function Deliverables() {
   return (
     <section className="deliverables" id="deliverables">
+
       <div className="deliverables-container">
 
         {/* HEADER */}
         <div className="deliverables-header">
 
-          {/* REMOVE SECTION LABEL */}
-
-          <h2>What You Receive</h2>
+          <h2>
+            What You Receive
+          </h2>
 
           <p>
             Every engagement is tailored to your requirements,
@@ -23,8 +24,10 @@ function Deliverables() {
           {/* ITEM 1 */}
           <div className="deliverable-item">
 
+            <div className="deliverable-line"></div>
+
             <h3>
-              Feasibility <span className="red">Report</span>
+              Feasibility Report
             </h3>
 
             <p>
@@ -37,8 +40,10 @@ function Deliverables() {
           {/* ITEM 2 */}
           <div className="deliverable-item">
 
+            <div className="deliverable-line"></div>
+
             <h3>
-              Verified <span className="red">Contacts</span>
+              Verified Contacts
             </h3>
 
             <p>
@@ -51,8 +56,10 @@ function Deliverables() {
           {/* ITEM 3 */}
           <div className="deliverable-item">
 
+            <div className="deliverable-line"></div>
+
             <h3>
-              Pricing <span className="red">Insights</span>
+              Pricing Insights
             </h3>
 
             <p>
@@ -65,8 +72,10 @@ function Deliverables() {
           {/* ITEM 4 */}
           <div className="deliverable-item">
 
+            <div className="deliverable-line"></div>
+
             <h3>
-              Call <span className="red">Summaries</span>
+              Call Summaries
             </h3>
 
             <p>
@@ -79,8 +88,10 @@ function Deliverables() {
           {/* ITEM 5 */}
           <div className="deliverable-item">
 
+            <div className="deliverable-line"></div>
+
             <h3>
-              Execution <span className="red">Considerations</span>
+              Execution Considerations
             </h3>
 
             <p>
@@ -103,6 +114,7 @@ function Deliverables() {
         </div>
 
       </div>
+
     </section>
   )
 }

@@ -223,6 +223,7 @@ section {
 .nav-links {
   display: flex;
   align-items: center;
+  gap: 34px;
 }
 
 .nav-links a {
@@ -266,7 +267,7 @@ section {
 ========================================================= */
 
 .hero {
-  min-height: 100vh;
+  min-height: 92vh;
 
   display: flex;
   align-items: center;
@@ -345,23 +346,25 @@ section {
 .hero-title {
   max-width: 720px;
 
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
-  font-size: 72px;
-  line-height: 1.02;
+  font-size: 52px;
+  line-height: 1.04;
 
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 
 .hero-subtitle {
-  max-width: 620px;
+  max-width: 680px;
 
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 25px;
+  line-height: 1.75;
 
-  color: #4f4f4f;
+  color: #474747;
+
+  font-weight: 400;
 }
 
 .hero-desc {
@@ -376,98 +379,29 @@ section {
 /* ================= HERO CONTACT ================= */
 
 .hero-contact {
-  margin-top: 42px;
-
-  display: flex;
-  align-items: center;
-  gap: 18px;
-
-  flex-wrap: wrap;
+  margin-top: 38px;
 }
 
-.hero-contact span {
+.hero-inline-link {
+  display: inline-block;
+
   font-size: 17px;
-  color: #555555;
-}
-
-.hero-contact-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 54px;
-
-  padding: 14px 28px;
-
-  border-radius: 12px;
-
-  background: #a61f28;
-
-  color: #ffffff !important;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  transition: var(--transition);
-
-  box-shadow:
-    0 10px 24px rgba(166, 31, 40, 0.14);
-}
-
-.hero-contact-link:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 16px 30px rgba(166, 31, 40, 0.18);
-}
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-button,
-a.primary,
-a.secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 54px;
-
-  padding: 14px 28px;
-
-  border-radius: 12px;
-
-  font-size: 15px;
   font-weight: 500;
 
-  cursor: pointer;
+  color: #5a5a5a;
+
+  line-height: 1.8;
+
+  border-bottom:
+    1px solid rgba(166, 31, 40, 0.25);
 
   transition: var(--transition);
 }
 
-/* ================= PRIMARY ================= */
+.hero-inline-link:hover {
+  color: var(--primary-color);
 
-button.primary,
-a.primary {
-  background:
-    linear-gradient(
-      135deg,
-      #b3202a,
-      #961922
-    );
-
-  color: #ffffff;
-
-  border: none;
-}
-
-button.primary:hover,
-a.primary:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 16px 32px rgba(179,32,42,0.18);
+  border-color: var(--primary-color);
 }
 
 /* =========================================================
@@ -516,7 +450,13 @@ a.primary:hover {
 
 .services-grid,
 .why-grid,
-.optional-grid,
+.optional-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 26px;
+}
+
 .deliverables-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -610,14 +550,17 @@ a.primary:hover {
 }
 
 /* =========================================================
-   WHY SECTION
+   ACCENT LINES
 ========================================================= */
 
-.why-line {
-  width: 40px;
+.why-line,
+.how-line,
+.optional-line,
+.deliverable-line {
+  width: 42px;
   height: 2px;
 
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   border-radius: 999px;
 
@@ -625,27 +568,19 @@ a.primary:hover {
 }
 
 /* =========================================================
-   HOW SECTION
+   REALITY LISTS
 ========================================================= */
 
-.step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.reality-card ul {
+  padding-left: 18px;
+}
 
-  width: 50px;
-  height: 50px;
+.reality-card li {
+  margin-bottom: 12px;
 
-  margin-bottom: 18px;
+  color: var(--muted-text);
 
-  border-radius: 50%;
-
-  background: rgba(179,32,42,0.08);
-
-  color: var(--primary-color);
-
-  font-size: 15px;
-  font-weight: 700;
+  line-height: 1.8;
 }
 
 /* =========================================================
@@ -755,19 +690,32 @@ a.primary:hover {
   justify-content: center;
 }
 
-/* ================= LARGE BUTTON ================= */
-
 .large-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   min-height: 64px;
 
   padding: 18px 44px;
 
   border-radius: 14px;
 
+  background:
+    linear-gradient(
+      135deg,
+      #b3202a,
+      #961922
+    );
+
+  color: #ffffff;
+
   font-size: 17px;
   font-weight: 600;
 
   letter-spacing: 0.02em;
+
+  transition: var(--transition);
 
   box-shadow:
     0 18px 36px rgba(179,32,42,0.16);
@@ -865,7 +813,11 @@ a.primary:hover {
   }
 
   .hero-title {
-    font-size: 58px;
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
   }
 
   .services-grid,
@@ -913,20 +865,11 @@ a.primary:hover {
   }
 
   .hero-title {
-    font-size: 44px;
+    font-size: 40px;
   }
 
   .hero-subtitle {
     font-size: 18px;
-  }
-
-  .hero-contact {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-contact-link {
-    width: 100%;
   }
 
   .services-grid,
@@ -977,7 +920,7 @@ a.primary:hover {
 @media (max-width: 480px) {
 
   .hero-title {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .services-header h2,
@@ -992,6 +935,10 @@ a.primary:hover {
 
   p {
     font-size: 14px;
+  }
+
+  .nav-links {
+    gap: 18px;
   }
 
   .nav-links a {
