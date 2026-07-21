@@ -1,16 +1,28 @@
-# React + Vite
+# 🏢 Indosight Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, high-performance landing page and web application built to showcase Indosight's services, deliverables, and operational framework.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Frontend:** React, JavaScript (JSX), Vite
+*   **Styling:** CSS
+*   **Deployment:** Netlify
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Modular Component Architecture:** Built with clean, reusable React components (`Hero`, `Services`, `HowWeWork`, `Deliverables`, and more) for high maintainability.
+*   **Responsive & Professional UI:** Designed to deliver a seamless and polished user experience across desktops, tablets, and mobile devices.
+*   **Interactive Sections:** Features dedicated views for company deliverables, optional services, and direct call-to-action (CTA) touchpoints.
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Visit the live website:
+👉 **[indosight.co](https://indosight.co/)**
+
+## 📦 Getting Started Locally
+
+If you'd like to run or test this project locally on your machine, follow these steps:
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/ribkalinks/indosight.git](https://github.com/ribkalinks/indosight.git)
