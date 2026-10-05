@@ -28,7 +28,7 @@ function Footer() {
               Contact
             </a>
 
-            <a href="mailto:boss@indosight.co">
+            <a href="mailto:andre@indosight.co">
               boss@indosight.co
             </a>
 

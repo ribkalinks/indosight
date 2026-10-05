@@ -16,7 +16,7 @@ function CTA() {
         <div className="cta-buttons">
 
           <a
-            href="mailto:boss@indosight.co"
+            href="mailto:andre@indosight.co"
             className="primary large-button"
           >
             Request a Feasibility Scope

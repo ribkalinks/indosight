@@ -29,7 +29,7 @@ function Hero() {
           <div className="hero-contact">
 
             <a
-              href="mailto:boss@indosight.co?subject=Feasibility%20Inquiry"
+              href="mailto:andre@indosight.co?subject=Feasibility%20Inquiry"
               className="hero-inline-link"
             >
               Contact us to request a feasibility scope.
