@@ -29,7 +29,7 @@ function Footer() {
             </a>
 
             <a href="mailto:andre@indosight.co">
-              boss@indosight.co
+              andre@indosight.co
             </a>
 
           </div>
